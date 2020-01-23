@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to diserlini!</h1>
+            <p class="lead">This is where I share about my programming projects.  Take a look below.</p>
+      <hr class="my-4">
+            <p>If you like what you see, share your email address at the bottom of the page.  I send out a quarterly newsletter.  I will never spam you or share your address with others.</p>
+        </div>
+    </div>
+
+
+    <div class="container-sm">
+            <div class="card-deck">
+                <div class="card" style="width: 18rem;">
+                    <img src="./static/real_estate2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Real Estate Market Intel</h5>
+                        <p class="card-text">Houston inside-the-loop housing market intelligence.  Quickly answer questions shuch as: What properties for sale are undervalued? Which agent has the most experience in my neighborhood?  What are the comps for my house?</p>
+                        <a href="{{url_for('real_estate')}}" class="btn btn-primary">Find out more</a>
+                    </div>
+                </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./static/plane.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Escape Houston in style</h5>
+                        <p class="card-text">Want to escape Houston to an international destination, traveling in business/first class?  Find the cheapest airfares.  Get an automatic alert when prices drop!</p>
+                        <a href="{{url_for('airfare')}}" class="btn btn-primary">Find out more</a>
+                    </div>
+                </div>
+            </div>
+        <p class="pl-sm-5"></p>
+        </divr>
+
+{%endblock%}
